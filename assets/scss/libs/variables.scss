@@ -1,0 +1,74 @@
+/** Fonts */
+// Google fonts: Lora
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+// Local Fonts: System-ui-display
+@font-face {
+    font-family: 'SF UI Display';
+    src        : local('SF UI Display Black'), local('SFUIDisplay-Black'),
+        url('/assets/fonts/SFUIDisplay-Black.woff') format('woff'),
+        url('/assets/fonts/SFUIDisplay-Black.ttf') format('truetype');
+    font-weight : 900;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src        : local('SF UI Display Heavy'), local('SFUIDisplay-Heavy'),
+        url('/assets/fonts/SFUIDisplay-Heavy.woff') format('woff'),
+        url('/assets/fonts/SFUIDisplay-Heavy.ttf') format('truetype');
+    font-weight : 900;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src        : local('SF UI Display Bold'), local('SFUIDisplay-Bold'),
+        url('/assets/fonts/SFUIDisplay-Bold.woff') format('woff'),
+        url('/assets/fonts/SFUIDisplay-Bold.ttf') format('truetype');
+    font-weight : 700;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src        : local('SF UI Display Semibold'), local('SFUIDisplay-Semibold'),
+        url('/assets/fonts/SFUIDisplay-Semibold.woff') format('woff'),
+        url('/assets/fonts/SFUIDisplay-Semibold.ttf') format('truetype');
+    font-weight : 600;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src        : local('SF UI Display Medium'), local('SFUIDisplay-Medium'),
+        url('/assets/fonts/SFUIDisplay-Medium.woff') format('woff'),
+        url('/assets/fonts/SFUIDisplay-Medium.ttf') format('truetype');
+    font-weight : 500;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src        : local('SF UI Display Light'), local('SFUIDisplay-Light'),
+        url('/assets/fonts/SFUIDisplay-Light.woff') format('woff'),
+        url('/assets/fonts/SFUIDisplay-Light.ttf') format('truetype');
+    font-weight : 400;
+    font-style  : normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src        : local('SF UI Display Thin'), local('SFUIDisplay-Thin'),
+        url('/assets/fonts/SFUIDisplay-Thin.woff') format('woff'),
+        url('/assets/fonts/SFUIDisplay-Thin.ttf') format('truetype');
+    font-weight : 300;
+    font-style  : normal;
+    font-display: swap;
+}
