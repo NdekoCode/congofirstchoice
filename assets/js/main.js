@@ -69,7 +69,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   //  On met tous les elements sur lesquel on souhaite faire une observation
   const elements = document.querySelectorAll(
-    ".hero__infos,.block-left,.block-right,.title,.container .title,.service-item,.text-p,p,.footer-item, .group,.hero__donation, .work,.work-item,.section .container .flex,.blog-item ,.blog-item,.member-item,.tabs-content,.section ul,.card"
+    ".hero__infos,.block-left,.block-right,.hero__image,.hero__baseline, .hero-left,.hero-right, .title,.container .title,.service-item,.text-p,p,.footer-item, .group,.hero__donation, .work,.work-item,.section .container .flex,.blog-item ,.blog-item,.member-item,.tabs-content,.section ul,.card"
   );
 
   //  Au chargement de la page on supprime la classe 'reveal' sur tous les elements du DOM

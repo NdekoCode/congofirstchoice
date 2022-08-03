@@ -1,5 +1,6 @@
 /** COMPILATION PRINCIPALE DES STYLES */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
 @use 'sass:math';
 /** Fonts */
 @font-face {
@@ -46,7 +47,14 @@ Les variables utiliser dans l'application
 */
 /** MEDIA QUERIES */
 :root {
-  --ff-primary: 'SF UI Display', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ff-primary: 'Inter', -apple-system,
+      system-ui,
+      BlinkMacSystemFont,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      sans-serif;
   --ff-link: var(--ff-primary);
   --ff-title: "Lora", 'Segoe UI', Ubuntu, serif;
   --fw: 400;
@@ -57,8 +65,10 @@ Les variables utiliser dans l'application
   --white: rgb(255, 255, 255);
   --white_1: rgb(250, 250, 250);
   --gray_1: rgb(197, 197, 198);
+  --gray_white: rgb(227, 227, 228);
+  --text-color: rgb(112, 111, 114);
   --white-gradient: linear-gradient(45deg, var(--white) 45%, var(--white_1)) no-repeat center center /cover;
-  --white-gradient_1: linear-gradient(45deg, var(--white_1)45%, var(--white)) no-repeat center center /cover;
+  --white-gradient_1: linear-gradient(45deg, var(--gray_white) 25%, var(--white)) no-repeat center center /cover;
   --gradient-gray: linear-gradient(45deg, var(--gray_1)45%, var(--white_1)) no-repeat center center /cover;
   /** SPACES */
   --space-block: 2rem;
@@ -74,6 +84,9 @@ Les variables utiliser dans l'application
   box-sizing: border-box;
   transition: color 0.3s, background-color 0.3s, opacity 0.3s; }
 
+::selection {
+  background-color: var(--gold); }
+
 body,
 html {
   font-family: var(--ff-primary);
@@ -84,25 +97,24 @@ html {
 
 body {
   overflow-x: hidden;
-  color: var(--dark); }
+  color: var(--text-color); }
 
 a {
   font-family: var(--ff-link); }
+
+img {
+  object-fit: cover; }
 
 /**
     Les styles utiles dans toutes l'application
 
 */
-.container {
-  max-width: 1024px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
-  @media (min-width: 1024px) {
-    .container {
-      padding-left: 0;
-      padding-right: 0; } }
+.btn {
+  padding: 8px 12px;
+  background-color: var(--gray_1);
+  color: var(--dark);
+  rounded: 2px;
+  border: 1px solid transparent; }
 
 h1,
 h2,
@@ -111,7 +123,102 @@ h4,
 h5,
 h6,
 .title {
-  @extends %title; }
+  font-family: var(--ff-title);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--dark); }
+
+.title-1, .important-title {
+  font-size: 2rem;
+  line-height: 1.75rem; }
+  @media only screen and (min-width: 576px) {
+    .title-1, .important-title {
+      font-size: 2.25rem; } }
+  @media only screen and (min-width: 768px) {
+    .title-1, .important-title {
+      font-size: 2.75rem;
+      line-height: 1.85rem; } }
+  @media only screen and (min-width: 992px) {
+    .title-1, .important-title {
+      font-size: 3.25rem;
+      line-height: 2.5rem; } }
+  @media only screen and (min-width: 1281px) {
+    .title-1, .important-title {
+      font-size: 4rem; } }
+
+.btn.btn-dark {
+  background-color: var(--dark);
+  color: vaR(--white); }
+  .btn.btn-dark:hover {
+    background: var(--white-gradient);
+    color: var(--dark);
+    border-color: var(--dark); }
+.btn .btn-dark-outline {
+  color: var(--dark);
+  background-color: var(--white);
+  border-color: var(--dark); }
+.btn.btn-x-round {
+  border-radius: 99px; }
+
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media only screen and (min-width: 992px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+
+.mb-block {
+  margin-bottom: var(--space-block); }
+
+.my-block {
+  margin: var(--space-block) 0; }
+
+.mx-block {
+  margin: 0 var(--space-block) 0; }
+
+/* -----------------APPARITION AU DEFILEMENT ----------------- */
+/* CETTE ANIMATION SERA JOUER UNIQUEMENT LORSQUE L'element HTML <html> aura la classe ".reveal-loaded " */
+/* Tous les element qui sont dans .reveal et qui on une classe .reveal-[quelque chose] */
+.reveal-loaded .reveal [class*="reveal-"] {
+  opacity: 0;
+  /* Les elements vont apparaitre depuis le bas */
+  transform: translateY(30px);
+  transition: 0s !important; }
+
+/* Tous les element qui sont dans .reveal-visible et qui on une classe .reveal-[quelque chose] */
+.reveal-loaded .reveal-visible [class*="reveal-"] {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1); }
+
+.img-response {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+.btn-cookie {
+  background-color: var(--blue); }
+
+.reveal-loaded .reveal-visible .reveal-1 {
+  transition-delay: 0.3s; }
+
+.reveal-loaded .reveal-visible .reveal-2 {
+  transition-delay: 0.4s; }
+
+.reveal-loaded .reveal-visible .reveal-3 {
+  transition-delay: 0.5s; }
+
+.reveal-loaded .reveal-visible .reveal-4 {
+  transition-delay: 0.6s; }
+
+.reveal-loaded .reveal-visible .reveal-5 {
+  transition-delay: 0.7s; }
 
 .title-1 {
   font-size: 1.875rem;
@@ -134,23 +241,124 @@ h6,
     Les styles utiles dans toutes l'application
 
 */
+.btn {
+  padding: 8px 12px;
+  background-color: var(--gray_1);
+  color: var(--dark);
+  rounded: 2px;
+  border: 1px solid transparent; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.title {
+  font-family: var(--ff-title);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--dark); }
+
+.title-1, .important-title {
+  font-size: 2rem;
+  line-height: 1.75rem; }
+  @media only screen and (min-width: 576px) {
+    .title-1, .important-title {
+      font-size: 2.25rem; } }
+  @media only screen and (min-width: 768px) {
+    .title-1, .important-title {
+      font-size: 2.75rem;
+      line-height: 1.85rem; } }
+  @media only screen and (min-width: 992px) {
+    .title-1, .important-title {
+      font-size: 3.25rem;
+      line-height: 2.5rem; } }
+  @media only screen and (min-width: 1281px) {
+    .title-1, .important-title {
+      font-size: 4rem; } }
+
+.btn.btn-dark {
+  background-color: var(--dark);
+  color: vaR(--white); }
+  .btn.btn-dark:hover {
+    background: var(--white-gradient);
+    color: var(--dark);
+    border-color: var(--dark); }
+.btn .btn-dark-outline {
+  color: var(--dark);
+  background-color: var(--white);
+  border-color: var(--dark); }
+.btn.btn-x-round {
+  border-radius: 99px; }
+
 .container {
   max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px; }
-  @media (min-width: 1024px) {
+  @media only screen and (min-width: 992px) {
     .container {
       padding-left: 0;
       padding-right: 0; } }
 
+.mb-block {
+  margin-bottom: var(--space-block); }
+
+.my-block {
+  margin: var(--space-block) 0; }
+
+.mx-block {
+  margin: 0 var(--space-block) 0; }
+
+/* -----------------APPARITION AU DEFILEMENT ----------------- */
+/* CETTE ANIMATION SERA JOUER UNIQUEMENT LORSQUE L'element HTML <html> aura la classe ".reveal-loaded " */
+/* Tous les element qui sont dans .reveal et qui on une classe .reveal-[quelque chose] */
+.reveal-loaded .reveal [class*="reveal-"] {
+  opacity: 0;
+  /* Les elements vont apparaitre depuis le bas */
+  transform: translateY(30px);
+  transition: 0s !important; }
+
+/* Tous les element qui sont dans .reveal-visible et qui on une classe .reveal-[quelque chose] */
+.reveal-loaded .reveal-visible [class*="reveal-"] {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1); }
+
+.img-response {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+
+.btn-cookie {
+  background-color: var(--blue); }
+
+.reveal-loaded .reveal-visible .reveal-1 {
+  transition-delay: 0.3s; }
+
+.reveal-loaded .reveal-visible .reveal-2 {
+  transition-delay: 0.4s; }
+
+.reveal-loaded .reveal-visible .reveal-3 {
+  transition-delay: 0.5s; }
+
+.reveal-loaded .reveal-visible .reveal-4 {
+  transition-delay: 0.6s; }
+
+.reveal-loaded .reveal-visible .reveal-5 {
+  transition-delay: 0.7s; }
+
 .header {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.502) 45%, rgba(255, 255, 255, 0.7)), no-repeat center center/cover; }
-  .header img {
-    width: 25px; }
+  background: var(--white-gradient); }
+  .header .container {
+    padding-left: 0;
+    padding-right: 0; }
 
 .navbar {
   position: relative;
@@ -163,7 +371,9 @@ h6,
   text-transform: capitalize;
   padding: 1.0714285714rem 1.4285714286rem;
   padding-left: 0;
-  background-color: var(--white); }
+  background-color: var(--white-gradient);
+  color: var(--dark);
+  font-weight: 500; }
   .navbar .list-item {
     margin-bottom: 1rem; }
   .navbar .dropdown-list li {
@@ -220,6 +430,7 @@ h6,
   flex-direction: column;
   align-items: flex-start;
   position: absolute;
+  z-index: 50;
   top: 100%;
   height: 100vh;
   border-right: 1px solid var(--gray_1);
@@ -228,6 +439,7 @@ h6,
   padding: 1.0714285714rem 1.4285714286rem 1.0714285714rem 1.4285714286rem;
   min-width: 220px; }
   .navlinks-container.open {
+    background: var(--white);
     transform: translateX(0%); }
 
 .dropdown-link {
@@ -313,8 +525,9 @@ h6,
     display: none;
     position: absolute;
     top: 100%;
-    z-index: 3; }
+    z-index: 10; }
   .dropdown-parent-item a:hover + .dropdown-list {
+    z-index: 50;
     animation: FadeUp 0.3s ease-out forwards; }
 
   .navbar {
@@ -404,5 +617,86 @@ h6,
   to {
     opacity: 1;
     transform: translateY(0); } }
+.hero {
+  position: relative;
+  margin-top: 2.5rem;
+  padding: 2rem 1rem; }
+  .hero .container {
+    position: relative; }
+  .hero .btn {
+    display: inline-block;
+    padding: 15px 55px; }
+  @media only screen and (min-width: 576px) {
+    .hero .title {
+      text-shadow: none; } }
+  .hero .title {
+    text-shadow: 1px 1px 5px var(--white_1); }
+  .hero .title-1 {
+    font-size: 2.5rem;
+    line-height: 1.2; }
+    @media only screen and (min-width: 576px) {
+      .hero .title-1 {
+        font-size: 2.75rem;
+        line-height: 1.4; } }
+    @media only screen and (min-width: 768px) {
+      .hero .title-1 {
+        font-size: 3rem; } }
+    @media only screen and (min-width: 992px) {
+      .hero .title-1 {
+        font-size: 3.25rem; } }
+  .hero .hero__image,
+  .hero .hero__baseline {
+    position: absolute; }
+  .hero .hero__image {
+    display: none;
+    z-index: 5;
+    border: 10px solid var(--white); }
+    .hero .hero__image.hero-left {
+      left: 5%;
+      top: 0; }
+    .hero .hero__image.hero-right {
+      z-index: 6;
+      right: 5%;
+      top: 55px; }
+  .hero .hero__baseline {
+    width: 100%;
+    margin-top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    text-align: center; }
+    @media only screen and (min-width: 576px) {
+      .hero .hero__baseline {
+        max-width: 80%; } }
+    @media only screen and (min-width: 768px) {
+      .hero .hero__baseline {
+        max-width: 70%; } }
+    @media only screen and (min-width: 992px) {
+      .hero .hero__baseline {
+        max-width: 60%; } }
+
+.hero__image {
+  overflow-y: hidden;
+  background: var(--white-gradient_1); }
+  .hero__image img {
+    height: 350px;
+    max-width: 200px; }
+  .hero__image.hero-left {
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px; }
+  .hero__image.hero-right {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px; }
+
+@media only screen and (min-width: 768px) {
+  .hero .baseline-text {
+    max-width: 65%;
+    margin-left: auto;
+    margin-right: auto; }
+  .hero .hero__image {
+    display: block; } }
+@media only screen and (min-width: 992px) {
+  .hero .baseline-text {
+    max-width: 75%; } }
 
 /*# sourceMappingURL=styles.css.map */
