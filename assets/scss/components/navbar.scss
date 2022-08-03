@@ -16,7 +16,13 @@
     }
 
     .dropdown-list {
-        // display: none;
+        li {
+            margin-bottom: 0.5rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     ul {
@@ -140,11 +146,11 @@
         font-size  : rem(22);
         font-weight: bold;
         text-align : left;
-        color      : var(--blue);
+        color      : var(--gold);
         margin-left: rem(5);
 
         &:hover {
-            color: var(--blue_a2);
+            color: var(--dark);
 
         }
 
@@ -153,11 +159,11 @@
             margin-left: 0;
 
             &:hover {
-                color: var(--blue);
+                color: var(--gold);
 
             }
 
-            color : var(--blue_a2);
+            color : var(--dark);
         }
     }
 }

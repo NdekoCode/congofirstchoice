@@ -53,6 +53,7 @@ Les variables utiliser dans l'application
   --blue: #036bcd;
   --blue_a2: #032c55;
   --dark: #1f2937;
+  --gold: #e6c04b;
   --white: rgb(255, 255, 255);
   --white_1: rgb(250, 250, 250);
   --gray_1: rgb(197, 197, 198);
@@ -92,6 +93,17 @@ a {
     Les styles utiles dans toutes l'application
 
 */
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+
 h1,
 h2,
 h3,
@@ -122,6 +134,17 @@ h6,
     Les styles utiles dans toutes l'application
 
 */
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 0;
+      padding-right: 0; } }
+
 .header {
   width: 100%;
   min-height: 100vh;
@@ -143,6 +166,10 @@ h6,
   background-color: var(--white); }
   .navbar .list-item {
     margin-bottom: 1rem; }
+  .navbar .dropdown-list li {
+    margin-bottom: 0.5rem; }
+    .navbar .dropdown-list li:last-child {
+      margin-bottom: 0; }
   .navbar ul {
     display: flex;
     flex-direction: column; }
@@ -224,16 +251,16 @@ h6,
     font-size: 1.5714285714rem;
     font-weight: bold;
     text-align: left;
-    color: var(--blue);
+    color: var(--gold);
     margin-left: 0.3571428571rem; }
     .nav-icon span:hover {
-      color: var(--blue_a2); }
+      color: var(--dark); }
     .nav-icon span span {
       display: block;
       margin-left: 0;
-      color: var(--blue_a2); }
+      color: var(--dark); }
       .nav-icon span span:hover {
-        color: var(--blue); }
+        color: var(--gold); }
 
 .nav-authentication {
   order: 3; }
