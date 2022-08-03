@@ -58,17 +58,57 @@
     src        : local('SF UI Display Light'), local('SFUIDisplay-Light'),
         url('/assets/fonts/SFUIDisplay-Light.woff') format('woff'),
         url('/assets/fonts/SFUIDisplay-Light.ttf') format('truetype');
-    font-weight : 400;
+    font-weight : 300;
     font-style  : normal;
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'SF UI Display';
-    src        : local('SF UI Display Thin'), local('SFUIDisplay-Thin'),
-        url('/assets/fonts/SFUIDisplay-Thin.woff') format('woff'),
-        url('/assets/fonts/SFUIDisplay-Thin.ttf') format('truetype');
-    font-weight : 300;
-    font-style  : normal;
-    font-display: swap;
+/**
+Les variables utiliser dans l'application
+*/
+/**
+Les variables utiliser dans l'application
+*/
+/** MEDIA QUERIES */
+$size-xxs  : 320 !default;
+$size-xs   :480 !default;
+$size-sm   :576 !default;
+$size-sml  :768 !default;
+$size-md-sm: 880 !default;
+$size-md   :992 !default;
+$size-lg   :1281 !default;
+$size-xl   :1400 !default;
+$xxs       :"only screen and (min-width: #{$size-xxs}px)";
+$xs        :"only screen and (min-width: #{$size-xs}px)";
+$sm        :"only screen and (min-width: #{$size-sm}px)";
+$sml       :"only screen and (min-width: #{$size-sml}px)";
+$md        :"only screen and (min-width: #{$size-md}px)";
+$md-sm     :"only screen and (min-width: #{$size-md-sm}px)";
+$lg        :"only screen and (min-width: #{$size-lg}px)";
+$xl        :"only screen and (min-width: #{$size-xl}px)";
+
+// Typographie
+:root {
+    --ff-primary: 'SF UI Display', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    --ff-link   : var(--ff-primary);
+    --ff-title  : "Lora", 'Segoe UI', Ubuntu, serif;
+
+    --fw: 400;
+
+    // COLOR
+    --blue            : #036bcd;
+    --blue_a2         : #032c55;
+    --dark            : #1f2937;
+    --white           : rgb(255, 255, 255);
+    --white_1         : rgb(250, 250, 250);
+    --gray_1          : rgb(197, 197, 198);
+    --white-gradient  : linear-gradient(45deg, var(--white) 45%, var(--white_1)) no-repeat center center /cover;
+    --white-gradient_1: linear-gradient(45deg, var(--white_1)45%, var(--white)) no-repeat center center /cover;
+    --gradient-gray   : linear-gradient(45deg, var(--gray_1)45%, var(--white_1)) no-repeat center center /cover;
+
+
+    /** SPACES */
+    --space-block: 2rem;
+    --space-big  : 3rem;
+    --equal-space: 1rem;
 }

@@ -13,8 +13,96 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <!-- Logo du site -->
+            <a href="#" class="nav-icon" aria-label="visit homepage" aria-current="page">
+                <img src="./assets/images/icons/logo.svg" alt="Logo HopeFist">
+                <span>Hope<span>Fist</span></span>
+            </a>
+            <!-- Menus principale et HUMBURGER-->
+            <div class="main-navlinks">
+                <!-- Button humberger -->
+                <button class="humburger" id="humburger" type="button" aria-label="Toggle navigation"
+                    aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <!-- Menus de navigation -->
+                <ul class="navlinks-container">
+                    <li class=" list-item"><a class="navlink" href="#" aria-current="page">Acceuil</a></li>
+                    <li class="dropdown-parent-item list-item">
+                        <a class="navlink" href="#" aria-current="page" class="dropdown-link">Services <svg
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="1em" height="1em"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" class="iconify"
+                                data-icon="dashicons:arrow-down-alt2"
+                                style="vertical-align: -0.125em; transform: rotate(360deg);">
+                                <path fill="currentColor" d="m5 6l5 5l5-5l2 1l-7 7l-7-7z"></path>
+                            </svg></a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">Offre d'emplois</a></li>
+                            <li><a href="#">Appel d'offre</a></li>
+
+                        </ul>
+                    </li>
+                    <li class=" list-item"><a class="navlink" href="#" aria-current="page">Actualités</a></li>
+                    <li class="dropdown-parent-item list-item ">
+                        <a href="#" aria-current="page" class="navlink dropdown-link">Formations<svg
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="1em" height="1em"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" class="iconify"
+                                data-icon="dashicons:arrow-down-alt2"
+                                style="vertical-align: -0.125em; transform: rotate(360deg);">
+                                <path fill="currentColor" d="m5 6l5 5l5-5l2 1l-7 7l-7-7z"></path>
+                            </svg></a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">Carriere</a></li>
+                            <li><a href="#">Nous contactez</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-parent-item list-item">
+                        <a href="#" aria-current="page" class="navlink dropdown-link">A propos <svg
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="1em" height="1em"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" class="iconify"
+                                data-icon="dashicons:arrow-down-alt2"
+                                style="vertical-align: -0.125em; transform: rotate(360deg);">
+                                <path fill="currentColor" d="m5 6l5 5l5-5l2 1l-7 7l-7-7z"></path>
+                            </svg></a>
+                        <ul class="dropdown-list">
+                            <li><a href="#">Actualités</a></li>
+                            <li><a href="#">Carriere</a></li>
+                            <li><a href="#">Nous contactez</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+
+            </div>
+            <!-- Menu d'authentification -->
+            <ul class="nav-authentication">
+                <li class="auth-links">
+                    <a href="#" class="user-auth" aria-label="Sign in page">
+                        <img src="./assets/images/icons/user.svg" alt="user-icon">
+                    </a>
+                </li>
+                <li class="sign-btns">
+                    <a href="#">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="hero">
+        </div>
+        <div class="partner">
+        </div>
+    </header>
     <!-- Custom JS -->
-    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

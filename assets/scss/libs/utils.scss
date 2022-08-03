@@ -1,0 +1,19 @@
+/**
+    Les styles utiles dans toutes l'application
+
+*/
+%title {
+    font-family  : var(--ff-title);
+    font-weight  : 600;
+    margin-bottom: 1rem;
+}
+
+%title-1 {
+    font-size  : 1.875rem;
+    line-height: 1.75rem;
+
+    @media (min-width: 1024px) {
+        font-size  : 2.25rem;
+        line-height: 2.5rem;
+    }
+}
