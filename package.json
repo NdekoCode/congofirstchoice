@@ -1,0 +1,25 @@
+{
+  "name": "congofirstchoice",
+  "version": "1.0.0",
+  "description": "First choice est une industrie oeuvrant dans l’ingénierie humaine qui produit les meilleurs commerciaux pour aider les entreprises à mieux commercialiser leurs produits et services",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass ./assets/scss/main.scss ./assets/css/styles.css",
+    "start": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/app.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NdekoCode/congofirstchoice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NdekoCode/congofirstchoice/issues"
+  },
+  "homepage": "https://github.com/NdekoCode/congofirstchoice#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.1.7"
+  }
+}
