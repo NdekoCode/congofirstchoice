@@ -1,5 +1,11 @@
 const humburger = document.getElementById("humburger");
 const mobileMenu = document.querySelector(".navlinks-container");
+const socialLinks = document.querySelectorAll(".hero .social-link");
+if (socialLinks !== null) {
+  socialLinks.forEach((soc) => {
+    soc.style.animationDelay = Math.random() * Math.random() * 0.5 + "s";
+  });
+}
 if (humburger !== null && mobileMenu !== null) {
   humburger.addEventListener("click", function () {
     console.log(this);

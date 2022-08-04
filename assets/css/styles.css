@@ -604,14 +604,14 @@ h6,
   min-width: 6.4285714286rem;
   padding: 0.5714285714rem 1.0714285714rem;
   margin: 0.3571428571rem;
-  background-color: var(--blue_a2);
-  color: var(--white_1);
+  background-color: var(--gold);
+  color: var(--white);
   border: 1px solid transparent;
 }
 .sign-btns a:hover {
-  color: var(--blue_a2);
-  border-color: var(--blue_a2);
-  background-color: transparent;
+  color: var(--gold);
+  border-color: var(--gold);
+  background-color: var(--white);
 }
 
 /** DROPDOWN */
@@ -766,8 +766,8 @@ h6,
 }
 .hero {
   position: relative;
-  margin-top: 2.5rem;
-  padding: 2rem 1rem;
+  margin-top: 1.75rem;
+  padding: 1.25rem 1rem;
 }
 .hero .container {
   position: relative;
@@ -852,10 +852,16 @@ h6,
 }
 .hero__content .social-link {
   position: absolute;
+  animation: bounce 0.55s ease-in-out infinite alternate;
+  z-index: 10;
 }
 .hero__content .social-link.google {
   left: -15%;
   top: 15%;
+}
+.hero__content .social-link.instagram {
+  top: 70%;
+  left: -5%;
 }
 .hero__content .social-link.fb {
   right: -5%;
@@ -928,6 +934,16 @@ h6,
 @media only screen and (min-width: 992px) {
   .hero .baseline-text {
     max-width: 75%;
+  }
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+    text-shadow: 0 5px 0 #ccc, 0 2px 3px rgb(0, 0, 0);
+  }
+  100% {
+    transform: translateY(-3px);
+    text-shadow: 0 50px 0 #black, 0 0px 20px rgba(0, 0, 0, 0.8);
   }
 }
 .social-link {

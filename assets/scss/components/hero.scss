@@ -1,7 +1,7 @@
 .hero {
     position  : relative;
-    margin-top: 2.5rem;
-    padding   : 2rem 1rem;
+    margin-top: 1.75rem;
+    padding   : 1.25rem 1rem;
 
     .container {
         position: relative;
@@ -89,11 +89,18 @@
     z-index   : 5;
 
     .social-link {
-        position: absolute;
+        position : absolute;
+        animation: bounce 0.55s ease-in-out infinite alternate;
+        z-index  : 10;
 
         &.google {
             left: -15%;
             top : 15%;
+        }
+
+        &.instagram {
+            top : 70%;
+            left: -5%;
         }
 
         &.fb {
@@ -192,5 +199,21 @@
         .baseline-text {
             max-width: 75%;
         }
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+
+
+        text-shadow: 0 5px 0 #ccc,
+            0 2px 3px rgba(0, 0, 0, 1);
+    }
+
+    100% {
+        transform: translateY(-3px);
+        text-shadow: 0 50px 0 #black,
+            0 0px 20px rgba(0, 0, 0, .8);
     }
 }

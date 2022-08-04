@@ -200,14 +200,14 @@
         padding            : rem(8) rem(15);
         margin             : rem(5);
         // border-radius   : rem(5);
-        background-color   : var(--blue_a2);
-        color              : var(--white_1);
+        background-color   : var(--gold);
+        color              : var(--white);
         border             : 1px solid transparent;
 
         &:hover {
-            color           : var(--blue_a2);
-            border-color    : var(--blue_a2);
-            background-color: transparent;
+            color           : var(--gold);
+            border-color    : var(--gold);
+            background-color: var(--white);
         }
     }
 }
