@@ -12,12 +12,15 @@
     background-color: var(--white-gradient);
     color           : var(--dark);
     font-weight     : 500;
+    text-transform  : capitalize;
 
     .list-item {
         margin-bottom: 1rem;
     }
 
     .dropdown-list {
+        background-color: var(--white);
+
         li {
             margin-bottom: 0.5rem;
 
@@ -144,10 +147,11 @@
     line-height    : 0.8;
 
     img {
-        width: 40px;
+        width: 55px;
     }
 
     span {
+        display    : none;
         font-size  : rem(22);
         font-weight: bold;
         text-align : left;
@@ -239,17 +243,20 @@
 @media only screen and(max-width:576px) {
     .nav-icon {
 
-        img {
-            width: 30px;
-        }
-
         span {
             font-size: rem(20);
         }
     }
 }
 
-@media only screen and(min-width: 768px) {}
+@media only screen and(min-width: 768px) {
+    .nav-icon {
+
+        span {
+            font-size: rem(20);
+        }
+    }
+}
 
 @media only screen and(min-width: 880px) {
     .dropdown-parent-item {
@@ -313,6 +320,7 @@
         margin-right: rem(20);
 
         span {
+            display  : block;
             font-size: rem(20);
         }
     }

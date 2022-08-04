@@ -19,6 +19,8 @@ new ResizeObserver((entries) => {
     }
   } else {
     if (mobileMenu !== null) {
+      console.log(mobileMenu);
+      console.log(mobileMenu);
       mobileMenu.style.transition = "none";
     }
   }
