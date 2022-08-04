@@ -774,7 +774,7 @@ h6,
 }
 .hero .btn {
   display: inline-block;
-  padding: 15px 55px;
+  padding: 12px 50px;
 }
 @media only screen and (min-width: 576px) {
   .hero .title {
