@@ -151,7 +151,7 @@
     }
 
     span {
-        display    : none;
+        display    : flex;
         font-size  : rem(22);
         font-weight: bold;
         text-align : left;
@@ -164,7 +164,6 @@
         }
 
         span {
-            display    : block;
             margin-left: 0;
 
             &:hover {
@@ -320,8 +319,9 @@
         margin-right: rem(20);
 
         span {
-            display  : block;
-            font-size: rem(20);
+            display      : inline-flex;
+            justify-items: center;
+            font-size    : rem(20);
         }
     }
 

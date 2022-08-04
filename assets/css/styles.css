@@ -566,7 +566,7 @@ h6,
   width: 55px;
 }
 .nav-icon span {
-  display: none;
+  display: flex;
   font-size: 1.5714285714rem;
   font-weight: bold;
   text-align: left;
@@ -577,7 +577,6 @@ h6,
   color: var(--dark);
 }
 .nav-icon span span {
-  display: block;
   margin-left: 0;
   color: var(--dark);
 }
@@ -692,7 +691,8 @@ h6,
     margin-right: 1.4285714286rem;
   }
   .nav-icon span {
-    display: block;
+    display: inline-flex;
+    justify-items: center;
     font-size: 1.4285714286rem;
   }
   .humburger {
@@ -856,7 +856,7 @@ h6,
   z-index: 10;
 }
 .hero__content .social-link.google {
-  left: -15%;
+  left: -5%;
   top: 15%;
 }
 .hero__content .social-link.instagram {
@@ -868,7 +868,7 @@ h6,
   top: -2%;
 }
 .hero__content .social-link.twitter {
-  right: -15%;
+  right: -5%;
   top: 55%;
 }
 .hero__content.hero-left {
