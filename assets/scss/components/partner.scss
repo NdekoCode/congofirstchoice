@@ -1,0 +1,13 @@
+.partner {
+    display   : flex;
+    margin-top: rem(100);
+
+    @media #{$xxs} {
+        margin-top: 0;
+    }
+
+    .partner__item {
+        max-width: 150px;
+        margin   : 8px;
+    }
+}
