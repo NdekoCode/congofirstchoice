@@ -19,7 +19,7 @@
 
 %title-1 {
     font-size  : 2rem;
-    line-height: 1.75rem;
+    line-height: 1.5rem;
 
     @media #{$sm} {
         font-size: 2.25rem;
@@ -42,6 +42,59 @@
 
 .title-1 {
     @extend %title-1;
+}
+
+%title-2 {
+    font-siwze: 1.8rem;
+
+    @media #{$sm} {
+        font-size: 2rem;
+    }
+
+    @media #{$sml} {
+        font-size  : 2.5rem;
+        line-height: 1.65rem;
+    }
+
+    @media #{$md} {
+        font-size  : 2.75rem;
+        line-height: 2rem;
+    }
+
+    @media #{$lg} {
+        font-size: 3rem;
+    }
+}
+
+%title-3 {
+    font-size: 1.5rem;
+    margin   : 0.6rem 0;
+
+    @media #{$sm} {
+        font-size: 1.55rem;
+    }
+
+    @media #{$sml} {
+        font-size  : 1.75rem;
+        line-height: 1.25rem;
+    }
+
+    @media #{$md} {
+        font-size  : 1.85rem;
+        line-height: 1.5rem;
+    }
+
+    @media #{$lg} {
+        font-size: 2rem;
+    }
+}
+
+.title-3 {
+    @extend %title-3;
+}
+
+.title-2 {
+    @extend %title-2;
 }
 
 .btn {

@@ -1,8 +1,21 @@
 .partner {
-    margin-top: rem(100);
+    backdrop-filter: blur(3px);
+    margin-top     : rem(100);
 
     @media #{$xs} {
         margin-top: 0;
+    }
+
+    @media #{$sm} {
+        margin-top: var(--space-big);
+    }
+
+    .title {
+        color: inherit;
+    }
+
+    .title-3 {
+        margin-bottom: 2rem;
     }
 
     #carousel1 {
@@ -45,12 +58,20 @@
         }
     }
 
+    .item {
+        margin: 0 5px;
+
+        &:hover {
+            transform: none;
+        }
+    }
+
     .item__image {
         display    : flex;
         align-items: center;
         width      : 200px;
         height     : 100px;
-        padding    : 10 15px;
+        padding    : 10px 15px;
         position   : relative;
 
         &::after {
@@ -64,14 +85,6 @@
             background-color: gray;
             left            : -10px;
 
-        }
-    }
-
-    .item {
-        margin: 0 5px;
-
-        :hover {
-            transform: none;
         }
     }
 
