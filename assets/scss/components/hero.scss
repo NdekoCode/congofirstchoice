@@ -168,10 +168,11 @@
     }
 
     &::before {
-        width : 75px;
-        height: 75px;
-        bottom: 100%;
-        left  : 5%;
+        display   : none;
+        // width  : 75px;
+        // height : 75px;
+        // bottom : 100%;
+        // left   : 5%;
     }
 
 }
