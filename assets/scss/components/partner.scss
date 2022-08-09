@@ -1,13 +1,45 @@
 .partner {
-    display   : flex;
     margin-top: rem(100);
 
-    @media #{$xxs} {
+    #carousel1 {
+        overflow: hidden;
+    }
+
+    .carousel {
+        &__next {
+            right: 20px;
+        }
+
+        &__prev {
+            left: auto;
+        }
+    }
+
+    .carousel__item {
+        height: 100px;
+        width : 100% !important;
+
+
+        @media #{$sm} {
+            width: auto !important;
+        }
+    }
+
+    .item__image {
+        display     : flex;
+        align-items : center;
+        width       : 200px;
+        height      : 100px;
+        padding     : 5 10px;
+        border-right: 1px solid gray;
+    }
+
+    .item {
+        margin: 0 5px;
+    }
+
+    @media #{$xs} {
         margin-top: 0;
     }
 
-    .partner__item {
-        max-width: 150px;
-        margin   : 8px;
-    }
 }

@@ -1116,25 +1116,16 @@ h6,
   transition-delay: 0.7s;
 }
 
-.title {
-  font-size: 25px;
-  color: #fff;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-
 .item {
   margin: 40px 10px;
-  background-color: #fff;
-  box-shadow: 0 15px 35px rgba(50, 50, 50, 0.1019607843), 0 5px 15px rgba(0, 0, 0, 0.1019607843);
   transition: transform 0.3s;
   transform: translate3d(0, -1px, 0);
 }
 .item img {
   display: block;
   max-width: 100%;
-  width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .item:hover {
   transform: translate3d(0, -10px, 0);
@@ -1195,8 +1186,9 @@ h6,
 .carousel__container {
   display: flex;
   justify-content: center;
+  align-items: center;
   transition: transform 0.45s;
-  transform: transform3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 .carousel__pagination {
   position: absolute;
@@ -1223,6 +1215,44 @@ h6,
 }
 .carousel__pagination__btn:hover, .carousel__pagination__btn:active, .carousel__pagination__btn--active, .carousel__pagination__btn--active::before {
   transform: scale(1.3);
+}
+
+.partner {
+  margin-top: 7.1428571429rem;
+}
+.partner #carousel1 {
+  overflow: hidden;
+}
+.partner .carousel__next {
+  right: 20px;
+}
+.partner .carousel__prev {
+  left: auto;
+}
+.partner .carousel__item {
+  height: 100px;
+  width: 100% !important;
+}
+@media only screen and (min-width: 576px) {
+  .partner .carousel__item {
+    width: auto !important;
+  }
+}
+.partner .item__image {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 100px;
+  padding: 5 10px;
+  border-right: 1px solid gray;
+}
+.partner .item {
+  margin: 0 5px;
+}
+@media only screen and (min-width: 480px) {
+  .partner {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

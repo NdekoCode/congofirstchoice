@@ -1,24 +1,13 @@
-$color-white:#fff;
-
-.title {
-    font-size    : 25px;
-    color        : $color-white;
-    font-weight  : bold;
-    margin-bottom: 25px;
-}
-
 .item {
-    margin          : 40px 10px;
-    background-color: $color-white;
-    box-shadow      : 0 15px 35px #3232321a, 0 5px 15px #0000001a;
-    transition      : transform 0.3s;
-    transform       : translate3d(0, -1px, 0);
+    margin    : 40px 10px;
+    transition: transform 0.3s;
+    transform : translate3d(0, -1px, 0);
 
     img {
-        display  : block;
-        max-width: 100%;
-        width    : 100%;
-        height   : auto;
+        display   : block;
+        max-width : 100%;
+        height    : auto;
+        object-fit: cover;
     }
 
     &:hover {
@@ -88,9 +77,12 @@ $color-white:#fff;
     &__container {
         display        : flex;
         justify-content: center;
+        align-items    : center;
         transition     : transform 0.45s;
         //  C'est deja gerer en JS
-        transform      : transform3d(0, 0, 0); //pour eviter qu'il applique une autre transformation
+        transform      : translate3d(0,
+                0,
+                0); //pour eviter qu'il applique une autre transformation
     }
 
     &__pagination {
