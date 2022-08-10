@@ -169,6 +169,10 @@ h6,
   }
 }
 
+.bg-gold {
+  background-color: var(--gold);
+}
+
 .title-2 {
   font-siwze: 1.8rem;
 }
@@ -392,6 +396,10 @@ h6,
   .title-1, .important-title {
     font-size: 4rem;
   }
+}
+
+.bg-gold {
+  background-color: var(--gold);
 }
 
 .title-2 {
@@ -1120,6 +1128,10 @@ h6,
   .title-1, .important-title {
     font-size: 4rem;
   }
+}
+
+.bg-gold {
+  background-color: var(--gold);
 }
 
 .title-2 {

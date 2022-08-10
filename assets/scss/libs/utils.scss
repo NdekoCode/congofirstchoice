@@ -40,6 +40,10 @@
     }
 }
 
+.bg-gold {
+    background-color: var(--gold)
+}
+
 .title-1 {
     @extend %title-1;
 }
