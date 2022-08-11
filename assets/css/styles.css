@@ -62,8 +62,11 @@ Les variables utiliser dans l'application
   --ff-link: var(--ff-primary);
   --ff-title: "Lora", "Segoe UI", Ubuntu, serif;
   --fw: 400;
-  --blue: #036bcd;
+  --blue: rgb(2, 4, 104);
   --blue_a2: #032c55;
+  --blue_a1: #090918;
+  --blue-gradient: linear-gradient(45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
+  --blue-gradient-reverse: linear-gradient(-45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
   --dark: #1f2937;
   --gold: #e6c04b;
   --white: rgb(255, 255, 255);
@@ -106,7 +109,8 @@ html {
 
 body {
   overflow-x: hidden;
-  color: var(--text-color);
+  background-color: #090918;
+  color: var(--gray_white);
 }
 
 a {
@@ -139,7 +143,7 @@ h6,
   font-family: var(--ff-title);
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--dark);
+  color: var(--gold);
 }
 
 .important-title, .title-1 {
@@ -171,6 +175,10 @@ h6,
 
 .bg-gold {
   background-color: var(--gold);
+}
+
+.text-gold {
+  color: var(--gold);
 }
 
 .title-2 {
@@ -289,6 +297,14 @@ h6,
   opacity: 1;
   transform: translateY(0);
   transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.bg-blue-gradient {
+  background: var(--blue-gradient);
+}
+
+.bg-blue-gradient-reverse {
+  background: var(--blue-gradient-reverse);
 }
 
 .img-response {
@@ -368,7 +384,7 @@ h6,
   font-family: var(--ff-title);
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--dark);
+  color: var(--gold);
 }
 
 .title-1, .important-title {
@@ -400,6 +416,10 @@ h6,
 
 .bg-gold {
   background-color: var(--gold);
+}
+
+.text-gold {
+  color: var(--gold);
 }
 
 .title-2 {
@@ -520,6 +540,14 @@ h6,
   transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
+.bg-blue-gradient {
+  background: var(--blue-gradient);
+}
+
+.bg-blue-gradient-reverse {
+  background: var(--blue-gradient-reverse);
+}
+
 .img-response {
   display: block;
   object-fit: cover;
@@ -555,7 +583,7 @@ h6,
 .header {
   width: 100%;
   min-height: 100vh;
-  background: var(--white-gradient);
+  background: var(--blue-gradient);
 }
 .header .container {
   padding-left: 0;
@@ -835,7 +863,6 @@ h6,
   }
   .navlinks-container a {
     margin: 0 0.7142857143rem;
-    font-weight: 400;
     color: var(--dark);
     position: relative;
   }
@@ -903,11 +930,10 @@ h6,
     text-shadow: none;
   }
 }
-.hero .title {
-  text-shadow: 1px 1px 5px var(--white_1);
-}
 .hero .title-1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  max-width: 550px;
+  text-align: center;
   line-height: 1.2;
 }
 @media only screen and (min-width: 576px) {
@@ -932,7 +958,7 @@ h6,
 }
 .hero .hero__image {
   background: var(--white-gradient_1);
-  border: 10px solid var(--white);
+  border: 5px solid var(--white);
   overflow-y: hidden;
 }
 .hero .hero__image img {
@@ -946,6 +972,9 @@ h6,
   transform: translateX(-50%);
   z-index: 10;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media only screen and (min-width: 576px) {
   .hero .hero__baseline {
@@ -955,7 +984,6 @@ h6,
 @media only screen and (min-width: 768px) {
   .hero .hero__baseline {
     max-width: 70%;
-    backdrop-filter: blur(5px);
   }
 }
 @media only screen and (min-width: 992px) {
@@ -986,8 +1014,8 @@ h6,
   left: -5%;
 }
 .hero__content .social-link.fb {
-  right: -5%;
-  top: -2%;
+  right: 9%;
+  top: 2%;
 }
 .hero__content .social-link.twitter {
   right: -5%;
@@ -1100,7 +1128,7 @@ h6,
   font-family: var(--ff-title);
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--dark);
+  color: var(--gold);
 }
 
 .title-1, .important-title {
@@ -1132,6 +1160,10 @@ h6,
 
 .bg-gold {
   background-color: var(--gold);
+}
+
+.text-gold {
+  color: var(--gold);
 }
 
 .title-2 {
@@ -1250,6 +1282,14 @@ h6,
   opacity: 1;
   transform: translateY(0);
   transition: opacity 1s cubic-bezier(0.5, 0, 0, 1), transform 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
+.bg-blue-gradient {
+  background: var(--blue-gradient);
+}
+
+.bg-blue-gradient-reverse {
+  background: var(--blue-gradient-reverse);
 }
 
 .img-response {
