@@ -347,10 +347,9 @@
         padding-left: 0;
 
         a {
-            margin     : 0 rem(10);
-            font-weight: 400;
-            color      : var(--dark);
-            position   : relative;
+            margin  : 0 rem(10);
+            color   : var(--dark);
+            position: relative;
 
             &::after {
                 content         : "";

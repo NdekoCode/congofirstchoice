@@ -14,8 +14,9 @@
     font-family  : var(--ff-title);
     font-weight  : 600;
     margin-bottom: 1rem;
-    color        : var(--dark);
+    color        : var(--gold);
 }
+
 
 %title-1 {
     font-size  : 2rem;
@@ -38,6 +39,14 @@
     @media #{$lg} {
         font-size: 4rem;
     }
+}
+
+.bg-gold {
+    background-color: var(--gold)
+}
+
+.text-gold {
+    color: var(--gold)
 }
 
 .title-1 {
@@ -178,6 +187,14 @@
     transform : translateY(0);
     transition: opacity 1s cubic-bezier(.5, 0, 0, 1), transform 1s cubic-bezier(.5, 0, 0, 1);
     ;
+}
+
+.bg-blue-gradient {
+    background: var(--blue-gradient);
+}
+
+.bg-blue-gradient-reverse {
+    background: var(--blue-gradient-reverse);
 }
 
 .img-response {

@@ -19,11 +19,13 @@
     }
 
     .title {
-        text-shadow: 1px 1px 5px var(--white_1);
+        // text-shadow: 1px 1px 5px var(--white_1);
     }
 
     .title-1 {
-        font-size  : 2.5rem;
+        font-size  : 2rem;
+        max-width  : 550px;
+        text-align : center;
         line-height: 1.2;
 
         @media #{$sm} {
@@ -48,7 +50,7 @@
 
     .hero__image {
         background: var(--white-gradient_1);
-        border    : 10px solid var(--white);
+        border    : 5px solid var(--white);
         overflow-y: hidden;
 
         img {
@@ -58,20 +60,23 @@
     }
 
     .hero__baseline {
-        width     : 100%;
-        margin-top: 5rem;
-        left      : 50%;
-        transform : translateX(-50%);
-        z-index   : 10;
-        text-align: center;
+        width         : 100%;
+        margin-top    : 5rem;
+        left          : 50%;
+        transform     : translateX(-50%);
+        z-index       : 10;
+        text-align    : center;
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
 
         @media #{$sm} {
             max-width: 80%;
         }
 
         @media #{$sml} {
-            max-width      : 70%;
-            backdrop-filter: blur(5px);
+            max-width         : 70%;
+            // backdrop-filter: blur(5px);
         }
 
         @media #{$md} {
@@ -104,8 +109,8 @@
         }
 
         &.fb {
-            right: -5%;
-            top  : -2%;
+            right: 9%;
+            top  : 2%;
         }
 
         &.twitter {
