@@ -25,9 +25,9 @@ html {
 }
 
 body {
-    overflow-x      : hidden;
-    background-color: #090918;
-    color           : var(--gray_white);
+    overflow-x: hidden;
+    background: var(--body-blue-gradient);
+    color     : var(--gray_white);
 }
 
 a {

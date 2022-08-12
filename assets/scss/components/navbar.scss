@@ -11,8 +11,11 @@
     padding-left    : 0;
     background-color: var(--white-gradient);
     color           : var(--dark);
-    font-weight     : 500;
-    text-transform  : capitalize;
+
+    a {
+        font-weight   : 500;
+        text-transform: uppercase;
+    }
 
     .list-item {
         margin-bottom: 1rem;
@@ -64,7 +67,7 @@
         width           : 100%;
         height          : 2px;
         position        : absolute;
-        background-color: var(--dark);
+        background-color: var(--gold);
         // Pour ne pas leurs cliquer dessus lors des evenements JS, car nous on voudra cliquer sur le boutton et non sur le span
         pointer-events  : none;
         border-radius   : 5px;
@@ -119,8 +122,12 @@
 
 
     &.open {
-        background: var(--white);
+        background: var(--gold);
         transform : translateX(0%);
+
+        .navlink {
+            color: var(--white_1);
+        }
     }
 }
 
@@ -145,6 +152,7 @@
     text-decoration: none;
     margin         : 0 auto;
     line-height    : 0.8;
+    color          : var(--white_1);
 
     img {
         width: 55px;
@@ -159,7 +167,7 @@
         margin-left: rem(5);
 
         &:hover {
-            color: var(--dark);
+            color: var(--white_1);
 
         }
 
@@ -171,7 +179,7 @@
 
             }
 
-            color : var(--dark);
+            color : var(--white_1);
         }
     }
 }
@@ -182,6 +190,15 @@
 
 .main-navlinks {
     order: 1;
+
+    a {
+        font-size: 13px;
+    }
+
+    .navlink {
+        color: var(--white_1);
+
+    }
 }
 
 .auth-links {
@@ -196,12 +213,13 @@
 .sign-btns {
     a {
         min-width          : rem(90);
-        padding            : rem(8) rem(15);
+        padding            : rem(12) rem(25);
         margin             : rem(5);
         // border-radius   : rem(5);
         background-color   : var(--gold);
-        color              : var(--white);
+        color              : var(--white_1);
         border             : 1px solid transparent;
+        font-size          : 12px;
 
         &:hover {
             color           : var(--gold);
@@ -219,7 +237,7 @@
     .dropdown-list {
         display   : none;
         padding   : rem(20);
-        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        box-shadow: 0 0 5px var(--gray_1);
         text-align: left;
         min-width : max-content;
 
