@@ -62,8 +62,10 @@ Les variables utiliser dans l'application
   --ff-link: var(--ff-primary);
   --ff-title: "Lora", "Segoe UI", Ubuntu, serif;
   --fw: 400;
-  --blue: rgb(2, 4, 104);
+  --blue: #020468;
   --blue_a2: #032c55;
+  --body-blue-gradient: linear-gradient(45deg, var(--blue_a) 25%, var(--blue_a1), var(--blue_a2)) no-repeat center center /cover;
+  --blue_a: #032549;
   --blue_a1: #090918;
   --blue-gradient: linear-gradient(45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
   --blue-gradient-reverse: linear-gradient(-45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
@@ -109,7 +111,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: #090918;
+  background: var(--body-blue-gradient);
   color: var(--gray_white);
 }
 

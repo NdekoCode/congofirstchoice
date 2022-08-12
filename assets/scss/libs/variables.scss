@@ -104,9 +104,11 @@ $xl        :"only screen and (min-width: #{$size-xl}px)";
     --fw: 400;
 
     // COLOR
-    --blue: rgb(2, 4, 104);
+    --blue: #020468;
 
     --blue_a2              : #032c55;
+    --body-blue-gradient   : linear-gradient(45deg, var(--blue_a) 25%, var(--blue_a1), var(--blue_a2)) no-repeat center center /cover;
+    --blue_a               : #032549;
     --blue_a1              : #090918;
     --blue-gradient        : linear-gradient(45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
     --blue-gradient-reverse: linear-gradient(-45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
