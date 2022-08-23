@@ -45,8 +45,11 @@
         }
     }
 
-    .hero__content,
     .hero__baseline {
+        position: relative;
+    }
+
+    .hero__content {
         position: absolute;
     }
 

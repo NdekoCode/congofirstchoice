@@ -590,7 +590,7 @@ h6,
 .header {
   width: 100%;
   min-height: 100vh;
-  background: var(--blue-gradient);
+  background-color: rgb(243 244 246/var(--tw-bg-opacity));
 }
 .header .topbar {
   background: var(--white-gradient_b);
@@ -978,8 +978,10 @@ h6,
     font-size: 56px;
   }
 }
-.hero .hero__content,
 .hero .hero__baseline {
+  position: relative;
+}
+.hero .hero__content {
   position: absolute;
 }
 .hero .hero__image {
