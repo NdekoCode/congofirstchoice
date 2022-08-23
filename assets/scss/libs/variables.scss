@@ -104,24 +104,36 @@ $xl        :"only screen and (min-width: #{$size-xl}px)";
     --fw: 400;
 
     // COLOR
-    --blue: #020468;
-
-    --blue_a2              : #032c55;
-    --body-blue-gradient   : linear-gradient(45deg, var(--blue_a) 25%, var(--blue_a1), var(--blue_a2)) no-repeat center center /cover;
+    --blue       : #020468;
+    --blue_a2    : #032c55;
+    --blue-g     : #565883;
+    --blue-g1    : #36384d;
+    --gold-g1    : #36384d;
+    --gold-g2    : #403f48;
+    --blue-g2    : #404048;
+    --gold-g     : #7b756f;
+    --g2-gradient: linear-gradient(120deg, var(--blue-g2), var(--gold-g2), var(--gold-g1) 15%) no-repeat center center /cover;
+    ;
+    --body-blue-gradient   : linear-gradient(45deg, var(--blue_a) 25%, var(--blue-g1), var(--blue-g)) no-repeat center center /cover;
     --blue_a               : #032549;
     --blue_a1              : #090918;
-    --blue-gradient        : linear-gradient(45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
+    --blue-gradient        : linear-gradient(45deg, var(--blue_a1) 25%, var(--blue-g1), var(--blue-g)) no-repeat center center /cover;
     --blue-gradient-reverse: linear-gradient(-45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
     --dark                 : #1f2937;
     --gold                 : #e6c04b;
     --white                : rgb(255, 255, 255);
     --white_1              : rgb(250, 250, 250);
+    --white_b              : rgba(255, 255, 255, 0.95);
+    --white_1b             : rgba(250, 250, 250, 0.95);
     --gray_1               : rgb(197, 197, 198);
     --gray_white           : rgb(227, 227, 228);
     --text-color           : rgb(112, 111, 114);
-    --white-gradient       : linear-gradient(45deg, var(--white) 45%, var(--white_1)) no-repeat center center /cover;
-    --white-gradient_1     : linear-gradient(45deg, var(--gray_white) 25%, var(--white)) no-repeat center center /cover;
-    --gradient-gray        : linear-gradient(45deg, var(--gray_1)45%, var(--white_1)) no-repeat center center /cover;
+    --white-gradient       : linear-gradient(45deg, var(--white) 45%, var(--white_1)) no-repeat center center / cover;
+    --white-gradient_b     : linear-gradient(45deg,
+            var(--white_b) 45%,
+            var(--white_1b)) no-repeat center center / cover;
+    --white-gradient_1: linear-gradient(45deg, var(--gray_white) 25%, var(--white)) no-repeat center center /cover;
+    --gradient-gray   : linear-gradient(45deg, var(--gray_1)45%, var(--white_1)) no-repeat center center /cover;
 
 
     /** SPACES */

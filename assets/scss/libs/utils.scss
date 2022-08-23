@@ -43,6 +43,11 @@
 
 .bg-gold {
     background-color: var(--gold) !important;
+    color           : var(--dark) !important;
+}
+
+.g2-gradient {
+    background: var(--g2-gradient);
 }
 
 .text-gold {
@@ -146,11 +151,23 @@
 }
 
 .section {
-    margin: rem(50) 0;
+    padding: rem(50) 0;
 }
 
 .mb-block {
     margin-bottom: var(--space-block);
+}
+
+.bg-blue-black {
+    background-color: var(--blue_a1) !important;
+}
+
+.bg-blue-pik {
+    background-color: var(--blue_a) !important;
+}
+
+.bg-blue-white {
+    background-color: var(--blue_a) !important;
 }
 
 .my-block {

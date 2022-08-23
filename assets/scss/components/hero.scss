@@ -27,10 +27,12 @@
         max-width  : 550px;
         text-align : center;
         line-height: 1.2;
+        font-weight: 900;
 
         @media #{$sm} {
             font-size  : 2.75rem;
             line-height: 1.4;
+
         }
 
         @media #{$sml} {
@@ -39,11 +41,15 @@
 
         @media #{$md} {
             font-size: 3.25rem;
+            font-size: 56px;
         }
     }
 
-    .hero__content,
     .hero__baseline {
+        position: relative;
+    }
+
+    .hero__content {
         position: absolute;
     }
 
