@@ -1,6 +1,11 @@
-.partner {
+#partner {
+    background     : var(--g2-gradient);
     backdrop-filter: blur(3px);
-    margin-top     : rem(100);
+
+}
+
+.partner {
+    margin-top: rem(100);
 
     @media #{$xs} {
         margin-top: 0;

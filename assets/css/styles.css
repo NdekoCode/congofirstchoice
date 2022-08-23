@@ -64,10 +64,17 @@ Les variables utiliser dans l'application
   --fw: 400;
   --blue: #020468;
   --blue_a2: #032c55;
-  --body-blue-gradient: linear-gradient(45deg, var(--blue_a) 25%, var(--blue_a1), var(--blue_a2)) no-repeat center center /cover;
+  --blue-g: #565883;
+  --blue-g1: #36384d;
+  --gold-g1: #36384d;
+  --gold-g2: #403f48;
+  --blue-g2: #404048;
+  --gold-g: #7b756f;
+  --g2-gradient: linear-gradient(120deg, var(--blue-g2), var(--gold-g2), var(--gold-g1) 15%) no-repeat center center /cover;
+  --body-blue-gradient: linear-gradient(45deg, var(--blue_a) 25%, var(--blue-g1), var(--blue-g)) no-repeat center center /cover;
   --blue_a: #032549;
   --blue_a1: #090918;
-  --blue-gradient: linear-gradient(45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
+  --blue-gradient: linear-gradient(45deg, var(--blue_a1) 25%, var(--blue-g1), var(--blue-g)) no-repeat center center /cover;
   --blue-gradient-reverse: linear-gradient(-45deg, var(--blue_a1) 25%, var(--blue_a2), var(--blue)) no-repeat center center /cover;
   --dark: #1f2937;
   --gold: #e6c04b;
@@ -182,6 +189,11 @@ h6,
 
 .bg-gold {
   background-color: var(--gold) !important;
+  color: var(--dark) !important;
+}
+
+.g2-gradient {
+  background: var(--g2-gradient);
 }
 
 .text-gold {
@@ -274,11 +286,23 @@ h6,
 }
 
 .section {
-  margin: 3.5714285714rem 0;
+  padding: 3.5714285714rem 0;
 }
 
 .mb-block {
   margin-bottom: var(--space-block);
+}
+
+.bg-blue-black {
+  background-color: var(--blue_a1) !important;
+}
+
+.bg-blue-pik {
+  background-color: var(--blue_a) !important;
+}
+
+.bg-blue-white {
+  background-color: var(--blue_a) !important;
 }
 
 .my-block {
@@ -423,6 +447,11 @@ h6,
 
 .bg-gold {
   background-color: var(--gold) !important;
+  color: var(--dark) !important;
+}
+
+.g2-gradient {
+  background: var(--g2-gradient);
 }
 
 .text-gold {
@@ -515,11 +544,23 @@ h6,
 }
 
 .section {
-  margin: 3.5714285714rem 0;
+  padding: 3.5714285714rem 0;
 }
 
 .mb-block {
   margin-bottom: var(--space-block);
+}
+
+.bg-blue-black {
+  background-color: var(--blue_a1) !important;
+}
+
+.bg-blue-pik {
+  background-color: var(--blue_a) !important;
+}
+
+.bg-blue-white {
+  background-color: var(--blue_a) !important;
 }
 
 .my-block {
@@ -590,7 +631,7 @@ h6,
 .header {
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(243 244 246/var(--tw-bg-opacity));
+  background: var(--g2-gradient);
 }
 .header .topbar {
   background: var(--white-gradient_b);
@@ -1188,6 +1229,11 @@ h6,
 
 .bg-gold {
   background-color: var(--gold) !important;
+  color: var(--dark) !important;
+}
+
+.g2-gradient {
+  background: var(--g2-gradient);
 }
 
 .text-gold {
@@ -1280,11 +1326,23 @@ h6,
 }
 
 .section {
-  margin: 3.5714285714rem 0;
+  padding: 3.5714285714rem 0;
 }
 
 .mb-block {
   margin-bottom: var(--space-block);
+}
+
+.bg-blue-black {
+  background-color: var(--blue_a1) !important;
+}
+
+.bg-blue-pik {
+  background-color: var(--blue_a) !important;
+}
+
+.bg-blue-white {
+  background-color: var(--blue_a) !important;
 }
 
 .my-block {
@@ -1453,8 +1511,12 @@ h6,
   transform: scale(1.3);
 }
 
-.partner {
+#partner {
+  background: var(--g2-gradient);
   backdrop-filter: blur(3px);
+}
+
+.partner {
   margin-top: 7.1428571429rem;
 }
 @media only screen and (min-width: 480px) {
@@ -1524,6 +1586,10 @@ h6,
   transform: translateY(-50%);
   background-color: gray;
   left: -10px;
+}
+
+#footer {
+  background: var(--g2-gradient);
 }
 
 /*# sourceMappingURL=styles.css.map */
