@@ -116,12 +116,17 @@ $xl        :"only screen and (min-width: #{$size-xl}px)";
     --gold                 : #e6c04b;
     --white                : rgb(255, 255, 255);
     --white_1              : rgb(250, 250, 250);
+    --white_b              : rgba(255, 255, 255, 0.95);
+    --white_1b             : rgba(250, 250, 250, 0.95);
     --gray_1               : rgb(197, 197, 198);
     --gray_white           : rgb(227, 227, 228);
     --text-color           : rgb(112, 111, 114);
-    --white-gradient       : linear-gradient(45deg, var(--white) 45%, var(--white_1)) no-repeat center center /cover;
-    --white-gradient_1     : linear-gradient(45deg, var(--gray_white) 25%, var(--white)) no-repeat center center /cover;
-    --gradient-gray        : linear-gradient(45deg, var(--gray_1)45%, var(--white_1)) no-repeat center center /cover;
+    --white-gradient       : linear-gradient(45deg, var(--white) 45%, var(--white_1)) no-repeat center center / cover;
+    --white-gradient_b     : linear-gradient(45deg,
+            var(--white_b) 45%,
+            var(--white_1b)) no-repeat center center / cover;
+    --white-gradient_1: linear-gradient(45deg, var(--gray_white) 25%, var(--white)) no-repeat center center /cover;
+    --gradient-gray   : linear-gradient(45deg, var(--gray_1)45%, var(--white_1)) no-repeat center center /cover;
 
 
     /** SPACES */

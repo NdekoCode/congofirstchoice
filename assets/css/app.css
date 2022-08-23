@@ -2049,10 +2049,6 @@ video {
   text-align: center;
 }
 
-.text-right {
-  text-align: right;
-}
-
 .text-justify {
   text-align: justify;
 }
@@ -2737,6 +2733,11 @@ video {
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
 
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -3278,20 +3279,12 @@ video {
     padding-right: 4rem;
   }
 
-  .md\:pr-24 {
-    padding-right: 6rem;
+  .md\:pl-12 {
+    padding-left: 3rem;
   }
 
   .md\:pb-0 {
     padding-bottom: 0px;
-  }
-
-  .md\:pl-24 {
-    padding-left: 6rem;
-  }
-
-  .md\:pl-12 {
-    padding-left: 3rem;
   }
 
   .md\:text-right {
