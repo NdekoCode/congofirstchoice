@@ -959,6 +959,7 @@ h6,
   max-width: 550px;
   text-align: center;
   line-height: 1.2;
+  font-weight: 900;
 }
 @media only screen and (min-width: 576px) {
   .hero .title-1 {
@@ -974,6 +975,7 @@ h6,
 @media only screen and (min-width: 992px) {
   .hero .title-1 {
     font-size: 3.25rem;
+    font-size: 56px;
   }
 }
 .hero .hero__content,

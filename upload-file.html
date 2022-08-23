@@ -1,57 +1,86 @@
-<div class="relative flex items-center justify-center min-h-screen px-4 py-12 bg-gray-500 bg-no-repeat bg-cover bg-gray-50 sm:px-6 lg:px-8"
-    style="background-image: url(https://images.unsplash.com/photo-1621243804936-775306a8f2e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
-    <div class="absolute inset-0 z-0 bg-black opacity-60"></div>
-    <div class="z-10 w-full p-10 bg-white sm:max-w-lg rounded-xl">
-        <div class="text-center">
-            <h2 class="mt-5 text-3xl font-bold text-gray-900">
-                File Upload!
-            </h2>
-            <p class="mt-2 text-sm text-gray-400">Lorem ipsum is placeholder text.</p>
-        </div>
-        <form class="mt-8 space-y-3" action="#" method="POST">
-            <div class="grid grid-cols-1 space-y-2">
-                <label class="text-sm font-bold tracking-wide text-gray-500">Title</label>
-                <input
-                    class="p-2 text-base border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
-                    type="" placeholder="mail@gmail.com">
+<!-- Container -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="shortcut icon" href="./assets/images/icons/logo.svg" type="image/x-icon/svg+xml">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <title>CongoFirstChoice</title>
+</head>
+
+<body>
+    <div class="relative flex items-center justify-center min-h-screen px-4 py-12 bg-gray-500 bg-no-repeat bg-cover bg-gray-50 sm:px-6 lg:px-8"
+        style="background-image: url(https://images.unsplash.com/photo-1621243804936-775306a8f2e3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);">
+        <div class="absolute inset-0 z-0 bg-black opacity-60"></div>
+        <div class="z-10 w-full p-10 bg-white sm:max-w-lg rounded-xl">
+            <div class="text-center">
+                <h2 class="mt-5 text-3xl font-bold text-gray-900">
+                    File Upload!
+                </h2>
+                <p class="mt-2 text-sm text-gray-400">Lorem ipsum is placeholder text.</p>
             </div>
-            <div class="grid grid-cols-1 space-y-2">
-                <label class="text-sm font-bold tracking-wide text-gray-500">Attach Document</label>
-                <div class="flex items-center justify-center w-full">
-                    <label class="flex flex-col w-full p-10 text-center border-4 border-dashed rounded-lg h-60 group">
-                        <div class="flex flex-col items-center justify-center w-full h-full text-center ">
-                            <!---<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-400 group-hover:text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <form class="mt-8 space-y-3" action="#" method="POST">
+                <div class="grid grid-cols-1 space-y-2">
+                    <label class="text-sm font-bold tracking-wide text-gray-500">Title</label>
+                    <input
+                        class="p-2 text-base border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500"
+                        type="" placeholder="mail@gmail.com">
+                </div>
+                <div class="grid grid-cols-1 space-y-2">
+                    <label class="text-sm font-bold tracking-wide text-gray-500">Attach Document</label>
+                    <div class="flex items-center justify-center w-full">
+                        <label
+                            class="flex flex-col w-full p-10 text-center border-4 border-dashed rounded-lg h-60 group">
+                            <div class="flex flex-col items-center justify-center w-full h-full text-center ">
+                                <!---<svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-blue-400 group-hover:text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                                     </svg>-->
-                            <div class="flex flex-auto w-2/5 mx-auto -mt-10 max-h-48">
-                                <img class="object-center has-mask h-36"
-                                    src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg"
-                                    alt="freepik image">
+                                <div class="flex flex-auto w-2/5 mx-auto -mt-10 max-h-48">
+                                    <img class="object-center has-mask h-36"
+                                        src="https://img.freepik.com/free-vector/image-upload-concept-landing-page_52683-27130.jpg?size=338&ext=jpg"
+                                        alt="freepik image">
+                                </div>
+                                <p class="text-gray-500 pointer-none "><span class="text-sm">Drag and drop</span> files
+                                    here
+                                    <br /> or <a href="" id="" class="text-blue-600 hover:underline">select a file</a>
+                                    from
+                                    your computer</p>
                             </div>
-                            <p class="text-gray-500 pointer-none "><span class="text-sm">Drag and drop</span> files here
-                                <br /> or <a href="" id="" class="text-blue-600 hover:underline">select a file</a> from
-                                your computer</p>
-                        </div>
-                        <input type="file" class="hidden">
-                    </label>
+                            <input type="file" class="hidden">
+                        </label>
+                    </div>
                 </div>
-            </div>
-            <p class="text-sm text-gray-300">
-                <span>File type: doc,pdf,types of images</span>
-            </p>
-            <div>
-                <button type="submit"
-                    class="flex justify-center w-full p-4 my-5 font-semibold tracking-wide text-gray-100 transition duration-300 ease-in bg-blue-500 rounded-full shadow-lg cursor-pointer focus:outline-none focus:shadow-outline hover:bg-blue-600">
-                    Upload
-                </button>
-            </div>
-        </form>
+                <p class="text-sm text-gray-300">
+                    <span>File type: doc,pdf,types of images</span>
+                </p>
+                <div>
+                    <button type="submit"
+                        class="flex justify-center w-full p-4 my-5 font-semibold tracking-wide text-gray-100 transition duration-300 ease-in bg-blue-500 rounded-full shadow-lg cursor-pointer focus:outline-none focus:shadow-outline hover:bg-blue-600">
+                        Upload
+                    </button>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
 
-<style>
-    .has-mask {
-        position: absolute;
-        clip: rect(10px, 150px, 130px, 10px);
-    }
-</style>
+    <style>
+        .has-mask {
+            position: absolute;
+            clip: rect(10px, 150px, 130px, 10px);
+        }
+    </style>
+    <!-- Custom JS -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/script.js" type="module"></script>
+</body>
+
+</html>
